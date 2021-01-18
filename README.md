@@ -16,7 +16,7 @@ Another challenge arising in multi-label learning, similar to single label learn
 
 Moreover, missing labels is another emerging topic in multi-label learning. This issue frequently happen in domains where the labels are collected via crowd-sourcing to reduce the labeling cost and effort. Furthermore, independent from crowd-sourcing, in some applications training based on incomplete label set and predicting the unavailable labels is preferred to reduce the annotation cost. This issue is illustrated in Figure 1 (c), where only some of the true labels are available for the image. In these cases, the question that needs to be answered is *"how to train an accurate multi-labeled classifier with the missing or incomplete information?".*
 
-![Convolution]()
+![Convolution](https://github.com/am94ghiassi/bachelor_project/blob/main/bp_fig.png)
 Figure 1: Examples of multi-label learning with full annotation, partial annotation, and missing labels.
 
 
