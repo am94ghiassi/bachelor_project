@@ -30,7 +30,7 @@ Figure 2: An illustration on how a scheduler can select layers from a pool of de
 
 **Expected Novelty** The prior work mainly aims to optimize the execution of a single type of neural networks, overlooking the challenging scenario of multi-model execution. Hence, the existing methods tend to optimize inference execution for a given  hardware. We are looking for novel solutions that explore the synergies and disparities of multiple inference models acting on a given dataset.
 
-**Testbed and baseline**: Two use cases are available: image classification and text analysis. For each use case, a set of different trained networks and their parameter are provided. The baseline implementation is based on Caffe, which provides cross-compilation functions for PC and raspberry-pi. The baseline provides the functionality to dice neural networks by layers. The following research questions correspond to different aspects of inference execution that lead to the improvement of the average response times or energy efficiency. Although each research question intertwines with each other, we expect that each question will be explored first independently and assume the baseline configuration for other research questions. At the last few weeks, we expect to exchange the findings of each question and propose a new scheduling policy. 
+**Testbed and baseline**: There are a few datasets are commonly used in multi-label learning. For instance, Pascal VOC 2007 [^3], MS COCO [^4] and NUS-WIDE [^5]. We encourage using these commonly used datasets as well as the state-of-the-art architectures suited for multi-label learning, since our goal is to design novel algorithms not the testbeds or the architecture. Although each research question intertwines with each other, we expect that each question will be explored first independently and assume the baseline configuration for other research questions. At the last few weeks, we expect to exchange the findings of each question and propose a robust Multi Label Learning algorithm. 
 
 #### Research Question 1: Partial Multi-Label Learning (PML) with deep neural networks by learning the confidence matrix estimation
 How to estimate the confidence matrix in Partial Multi-Label Learning with deep neural network? In PML, a subset of labels is relevant to the sample and rest of the labels are irrelevant and each label has a confidence of being ground truth. How to use DNN for confidence matrix estimation for PML?
@@ -48,7 +48,7 @@ Given a set of multi-labeled data with missing labels (partially), how could one
 The problem of incomplete labels is frequently encountered in many application domains where the training labels are obtained via crowd-sourcing. Semi-supervised learning is a method that deals with incomplete labels. The question is how one could reconstruct the example-label matrix benefiting semi-supervised learning.
 
 ### Prerequisites 
-Students shall have basic knowledge of machine learning, deep neural networks and experience in Python and scripting software such as Keras, Tensorflow and Torch. 
+Students shall have basic knowledge of machine learning, deep neural networks and experience in Python and learning framework such as Keras, Tensorflow and Torch. 
 
 ### Planning of the research project
 1. A kick-off meeting (in Q3)
@@ -63,3 +63,9 @@ Students shall have basic knowledge of machine learning, deep neural networks an
 [^1] Min-Ling Zhang and Zhi-Hua Zhou. A review on multi-label learning algorithms.IEEE transac-tions on knowledge and data engineering, 26(8):1819–1837, 2013.
 
 [^2] Gil Levi and Tal Hassner. Age and Gender Classification using Convolutional Neural Networks.2008 8th IEEE International Conference on Automatic Face and Gesture Recognition, FG 2008,2015.
+
+[^3] Mark Everingham, S. M. Ali Eslami, Luc Van Gool, Christopher K. I. Williams, John M. Winn,and Andrew Zisserman.  The pascal visual object classes challenge: A retrospective.Int. J.Comput. Vis., 111(1):98–136, 2015.
+
+[^4] Tsung-Yi Lin, Michael Maire, Serge J. Belongie, James Hays, Pietro Perona, Deva Ramanan,Piotr Dollár, and C. Lawrence Zitnick. Microsoft COCO: common objects in context. In David J.Fleet, Tomás Pajdla, Bernt Schiele, and Tinne Tuytelaars, editors,ECCV, volume 8693 ofLectureNotes in Computer Science, pages 740–755. Springer, 2014.
+
+[^5] Tat-Seng Chua, Jinhui Tang, Richang Hong, Haojie Li, Zhiping Luo, and Yantao Zheng. NUS-WIDE: a real-world web image database from national university of singapore.  In StéphaneMarchand-Maillet and Yiannis Kompatsiaris, editors,CIVR. ACM, 2009. 
