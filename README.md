@@ -3,6 +3,7 @@
 ## Supervision Team
 
 Responsible Professor: Dr. Lydia Y. Chen
+
 Supervisors: Amirmasoud Ghiassi and Taraneh Younesian
 
 ## Background and motivation
