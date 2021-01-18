@@ -28,7 +28,7 @@ In this project, we aim to develop novel scheduling policies that can minimize t
 ![dnn_pool](/home/bacox/Pictures/dnn_pool_execution.png)
 Figure 2: An illustration on how a scheduler can select layers from a pool of deep neural networks ona two-core system.
 
-**Expected Novelty** The prior work mainly aims to optimize the execution of a single type of neural networks, overlooking the challenging scenario of multi-model execution. Hence, the existing methods tend to optimize inference execution for a given  hardware. We are looking for novel solutions that explore the synergies and disparities of multiple inference models acting on a given dataset.
+**Expected Novelty** The aforementioned challenges are recently being one of the main focuses of the image classification community. Since real-world images can be associated with more than one label, multi-label learning and its variants are closer to real-world applications. We look for novel solutions and ideas to improve the existing works or addressing their shortcoming. 
 
 **Testbed and baseline**: There are a few datasets are commonly used in multi-label learning. For instance, Pascal VOC 2007 [^3], MS COCO [^4] and NUS-WIDE [^5]. We encourage using these commonly used datasets as well as the state-of-the-art architectures suited for multi-label learning, since our goal is to design novel algorithms not the testbeds or the architecture. Although each research question intertwines with each other, we expect that each question will be explored first independently and assume the baseline configuration for other research questions. At the last few weeks, we expect to exchange the findings of each question and propose a robust Multi Label Learning algorithm. 
 
