@@ -23,10 +23,8 @@ Figure 1: An illustration of a convolutional neural network, consisting of convo
 
 ### Research Questions for the Sub-Projects
 
-In this project, we aim to develop novel scheduling policies that can minimize the response time for executing multi-inference jobs, each of which is composed of multiple inference tasks using different trained networks. To such an end, the first step is to develop a good understanding of resource demands, e.g., CPU, memory, or IO, of different types of deep inference jobs and their respective layers. Take convolutional neural network as an example shown in Fig 1., a fully connected layer of the convolution network is memory intensive, whereas the convolutional layer is CPU intensive. The second step is to find the optimal way to partition those inference jobs according to their network characteristics. For instance, each inference task can be decomposed into multiple sub-tasks that correspond to each layer of neural networks. The third step is to combine the understanding of resource demands per layer and explore different scheduling policies.
+In the following we bring five research questions which address these emerging challenges in multi-label learning with incomplete information. The end goal is to design algorithms that are robust and can predict the correct label set per example with high accuracy. 
 
-![dnn_pool](/home/bacox/Pictures/dnn_pool_execution.png)
-Figure 2: An illustration on how a scheduler can select layers from a pool of deep neural networks ona two-core system.
 
 **Expected Novelty** The aforementioned challenges are recently being one of the main focuses of the image classification community. Since real-world images can be associated with more than one label, multi-label learning and its variants are closer to real-world applications. We look for novel solutions and ideas to improve the existing works or addressing their shortcoming. 
 
