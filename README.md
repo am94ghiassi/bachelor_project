@@ -30,7 +30,7 @@ In the following we bring five research questions which address these emerging c
 
 **Testbed and baseline**: There are a few datasets are commonly used in multi-label learning. For instance, Pascal VOC 2007 [4], MS COCO [5] and NUS-WIDE [6]. We encourage using these commonly used datasets as well as the state-of-the-art architectures suited for multi-label learning, since our goal is to design novel algorithms not the testbeds or the architecture. Although each research question intertwines with each other, we expect that each question will be explored first independently and assume the baseline configuration for other research questions. At the last few weeks, we expect to exchange the findings of each question and propose a robust Multi Label Learning algorithm. 
 
-#### Research Question 1: Partial Multi-Label Learning (PML) with deep neural networks by learning the confidence matrix estimation
+#### Research Question 1: Partial Multi-Label Learning (PML) with Deep Neural Networks by Learning the Confidence Matrix Estimation
 How to estimate the confidence matrix in Partial Multi-Label Learning with deep neural network? In PML, a subset of labels is relevant to the sample and rest of the labels are irrelevant and each label has a confidence of being ground truth. How to use DNN for confidence matrix estimation for PML?
 
 #### Research Question 2: Online Multi-Label Learning with Crowd
