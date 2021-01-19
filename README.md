@@ -8,7 +8,7 @@ Supervisors: Amirmasoud Ghiassi and Taraneh Younesian
 
 ## Background and motivation
 
-multi-label Learning is a extension of multi-class classification, which multiple labels are assigned to each sample. As shown in Figure 1 (c), A set of labels is associated to each image. In Multi-Label Learning, the goal is to train Deep Neural Networks with multi-label examples [1]. Acquiring a fully labeled dataset in multi-labeled scenario is a time-consuming and expensive task, therefore a big challenge in this area is to provide the clean label set. 
+multi-label Learning is a extension of multi-class classification, which multiple labels are assigned to each sample. As shown in Figure 1 (a), A set of labels is associated to each image. In Multi-Label Learning, the goal is to train Deep Neural Networks with multi-label examples [1]. Acquiring a fully labeled dataset in multi-labeled scenario is a time-consuming and expensive task, therefore a big challenge in this area is to provide the clean label set. 
 
 In many cases usually the provided label set is partially included with true labels named Partial Multi-Label Learning [2]. An example of PML is shown in Figure 1 (b). As seen in the figure with PML, not all the provided labels are true and only a subset of the given labels is true. Then the challenge is to identify the correct labels among the provided label set. A solution for this issue is to construct an example-label relevance confidence matrix and estimate it based on the available label information. The prior art [2, 3] selects high-confidence labels, then using the off-the-shelf multi-label learning method to train models in Partial Multi-Label Learning scenarios.      
 
