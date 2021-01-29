@@ -10,7 +10,7 @@ Supervisors: Amirmasoud Ghiassi and Taraneh Younesian
 
 Multi-label learning (MLL) is an emerging extension of multi-class classification, which multiple labels are assigned to each data sample. In real-world applications, a data sample usually could be associated with multiple labels. For instance, a landscape picture of Delft in Figure 1, can have the labels "tree",  "bicycle", "canal", and "Delft" at the same time. In MLL, the goal is to train classification models with multi-label example [1] which can predict them with high accuracy. However, acquiring a fully labeled dataset in multi-labeled scenario is a time-consuming and expensive task, and therefore a big challenge in this area is to provide the clean label set. 
 
-The main challenge that we try to address in this project is MLL with all sorts of imperfect labels. This problem can be divided into three sub problems: *i)* MLL with weak labels, *ii) MLL with wrong labels, and *iii)* MLL with missing labels. 
+The main challenge that we try to address in this project is MLL with all sorts of imperfect labels. This problem can be divided into three sub problems: *i)* MLL with weak labels, *ii)* MLL with wrong labels, and *iii)* MLL with missing labels. 
 
 In many cases usually the provided label set is included with all the relevant labels and partially with some irrelevant labels, which we call MLL with weak labels [2], shown in Figure 1. As seen in the figure, among all the provided labels only a subset of the given labels is true. Then the challenge is to identify the correct labels among the provided label set. A solution for this issue is to assign confidence values to each label per example and learn those values in an optimization problem setting.
 
