@@ -23,27 +23,25 @@ Figure 1: Examples of multi-label learning with full annotation, partial annotat
 
 ### Research Questions for the Sub-Projects
 
-In the following we bring five research questions which address these emerging challenges in multi-label learning with incomplete information. The end goal is to design algorithms that are robust and can predict the correct label set per example with high accuracy. 
+By the end of this project the question that needs to be answered is *"how to train an accurate multi-labeled classifier with imperfect label information?"*. In the following we bring five research questions which address these emerging challenges in multi-label learning with incomplete information. The end goal is to design algorithms that are robust to incomplete label information and can predict the correct label set per example with high accuracy.
 
-
-**Expected Novelty** The aforementioned challenges are recently being one of the main focuses of the image classification community. Since real-world images can be associated with more than one label, multi-label learning and its variants are closer to real-world applications. We look for novel solutions and ideas to improve the existing works or addressing their shortcoming. 
+**Expected Novelty** The aforementioned challenges are recently being one of the main focuses of the image classification community. Since real-world images can be associated with more than one label, multi-label learning and its variants are closer to real-world applications. We look for novel solutions and ideas to improve the existing works or addressing their shortcoming.  
 
 **Testbed and baseline**: There are a few datasets are commonly used in multi-label learning. For instance, Pascal VOC 2007 [4], MS COCO [5] and NUS-WIDE [6]. We encourage using these commonly used datasets as well as the state-of-the-art architectures suited for multi-label learning, since our goal is to design novel algorithms not the testbeds or the architecture. Although each research question intertwines with each other, we expect that each question will be explored first independently and assume the baseline configuration for other research questions. At the last few weeks, we expect to exchange the findings of each question and propose a robust Multi Label Learning algorithm. 
 
-#### Research Question 1: Partial Multi-Label Learning (PML) with Deep Neural Networks by Learning the Confidence Matrix Estimation
-How to estimate the confidence matrix in Partial Multi-Label Learning with deep neural network? In PML, a subset of labels is relevant to the sample and rest of the labels are irrelevant and each label has a confidence of being ground truth. How to use DNN for confidence matrix estimation for PML?
+#### Research Question 1: Filtering Wrong Labels in Multi-Labeled Data with Weak Labels for Training a Deep Neural Network
+Consider the scenario where the multi-labeled data include all relevant labels and some irrelevant labels for each instance, and the irrelevant ones should be filtered out. How to filter wrong labels (irrelevant) and then train DNNs with multi-labeled data which is associated with corrected labels (relevant) via extending the single-label approaches e.g. Co-teaching~\cite{han2018co, yu2019does}?
 
-#### Research Question 2: Online Multi-Label Learning with Crowd
-How to train an online multi-label classifier with wrong labels from different crowds? How to aggregate true multi-label from multiple workers (crowd-source) in an online manner?
+#### Research Question 2: Active Learning with Multi-Label Classification with Wrong Labels
+How to use human expert to clean/relabel the wrongly labeled multi-label data to obtain high accuracy classification? How could one benefit from active learning to identify informative examples to relabel by the expert?
 
-#### Research Question 3: Multi-Label Classification with Missing Labels with Active Learning
-What if in a multi-label classification problem, instead of the whole label set, a subset of labels were provided for each image? Active learning is a method that identifies informative data and uses a human expert for labeling. How can one infer the whole label set per data example while some labels missing, benefiting human knowledge?  
+#### Research Question 3: Wrong Labels Correction in Multi-Labeled Data for Training a Deep Neural Network
+Consider the case where the multi-labeled data includes some true and some wrong labels for each instance. The question is how to first identify and correct the wrong labels and then train DNNs with multi-labeled data with corrected labels? One can do this by extending the single-label noise correction methods e.g. D2L~\cite{ma2018dimensionality}, GLC~\cite{hendrycks2018using} and F-correction~\cite{patrini2017making}?
 
-#### Research Question 4: Learning Deep Neural Networks with Multi-Labeled Data with Missing Labels
-Given a set of multi-labeled data with missing labels (partially), how could one train a neural network to learn the full label set per example?  
-
-#### Research Question 5: Semi-supervised Multi-Label Classification with Missing Labels
-The problem of incomplete labels is frequently encountered in many application domains where the training labels are obtained via crowd-sourcing. Semi-supervised learning is a method that deals with incomplete labels. The question is how one could reconstruct the example-label matrix benefiting semi-supervised learning.
+#### Research Question 4: Multi-Label Classification with Missing Labels with Active Learning
+What if in a multi-label classification problem, instead of the whole label set, a subset of labels were provided for each image? Active learning is a method that identifies informative data and uses a human expert for labeling. How can one infer the whole label set per data example while some labels missing, benefiting human knowledge?
+#### Research Question 5: Training Deep Neural Networks with Multi-Labeled Data with Missing Labels
+Given a set of multi-labeled data with missing labels, how could one design a robust loss function for a neural network to learn the full label set per example. Particularly, the network needs to be robust to the missing labels while classifying the test data.
 
 ### Prerequisites 
 Students shall have basic knowledge of machine learning, deep neural networks and experience in Python and learning framework such as Keras, Tensorflow and Torch. 
