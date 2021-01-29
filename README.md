@@ -1,4 +1,4 @@
-# Multi-Label Learning with Incomplete Information
+# Robust Multi-Label Learning Deep Neural Networks with Imperfect Labels
 
 ## Supervision Team
 
