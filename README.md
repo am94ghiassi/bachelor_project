@@ -18,7 +18,7 @@ Moreover, missing labels is another emerging topic in multi-label learning. This
 
 ![mml](https://github.com/am94ghiassi/bachelor_project/blob/main/brpimg.png)
 
-Figure 1: Examples of multi-label learning with full annotation, partial annotation, and missing labels.
+Figure 1: An illustration of Multi-Label Learning.
 
 
 ### Research Questions for the Sub-Projects
