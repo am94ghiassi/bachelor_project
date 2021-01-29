@@ -12,9 +12,7 @@ Multi-label learning (MLL) is an emerging extension of multi-class classificatio
 
 The main challenge that we try to address in this project is MLL with all sorts of imperfect labels. This problem can be divided into three sub problems: *i)* MLL with weak labels, *ii)* MLL with wrong labels, and *iii)* MLL with missing labels. 
 
-In many cases usually the provided label set is included with all the relevant labels and partially with some irrelevant labels, which we call MLL with weak labels [2], shown in Figure 1. As seen in the figure, among all the provided labels only a subset of the given labels is true. Then the challenge is to identify the correct labels among the provided label set. A solution for this issue is to assign confidence values to each label per example and learn those values in an optimization problem setting.
-
-The prior art [2,3] select high-confidence labels, then use the off-the-shelf MLL methods to train models in the weakly labeled scenario. 
+In many cases usually the provided label set is included with all the relevant labels and partially with some irrelevant labels, which we call MLL with weak labels [2], shown in Figure 1. As seen in the figure, among all the provided labels only a subset of the given labels is true. Then the challenge is to identify the correct labels among the provided label set. A solution for this issue is to assign confidence values to each label per example and learn those values in an optimization problem setting. The prior art [2,3] select high-confidence labels, then use the off-the-shelf MLL methods to train models in the weakly labeled scenario. 
 
 A similar issue arises where not all the relevant labels are provided and instead a few irrelevant labels are, which we call MLL with wrong labels. The challenge here is to identify those wrong labels and replace them with the correct relevant labels. This problem has been addressed in [4] by a dimensionality reduction method based on dependence maximization. 
 
